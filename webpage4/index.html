@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>webpage 4</title>
+    <!-- website link https://preview.colorlib.com/#unwind -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+    <!-- style link --> <link rel="stylesheet" href="style.css">
+    <!-- font awesome link --> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- wow cdn --> <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+
+
+    <!-- counter  up script -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+      jQuery(document).ready(function( $ ) {
+          $('.counter').counterUp({
+              delay: 10,
+              time: 1000
+          });
+      });
+    </script>
+
+
+</head>
+<body>
+
+  <div class="container-fluid " id="header">
+        <nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <h2 class="lg text-white"> Unwind </h2>
+      <h6 class="text-white"> HOTEL BOOKING</h6>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav m-auto mb-2 mb-lg-0 ">
+        <li class="nav-item">
+          <a class="nav-link active fs-5  p-3  text-white " aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fs-5  p-3  text-white  active" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fs-5  p-3  text-white active" href="#">Rooms</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link fs-5 p-3  text-white  active" href="#">Resrto & Bar</a>
+          </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle fs-5 p-3  text-white  active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Blog
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+     <!-- Button trigger modal -->
+    <button type="button" class="btn btn-lg btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</button>
+  </div>
+</nav>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-3 ms-auto" id="exampleModalLabel">Login Form </h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       <input type="text" placeholder="Enter your Email" class="Form form-control"><br>
+       <input type="password" placeholder="Enter your Password" class="Form form-control">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-light">Login</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div> 
+
+<div class="bigimg">
+  <div class="hcon wow animate__animated animate__fadeInUp">
+      <h6>ENJOY YOUR WONDERFUL HOLIDAYS WITH A GREAT LUXURY EXPERIENCE!</h6>
+      <h1>Most Relaxing Place</h1>
+      <button> TAKE A TOUR -></button> &nbsp; <button id="btn"> LEARN MORE -></button>
+  </div>
+</div>
+
+<section class="second container-fluid">
+    <div class="secon container wow animate__animated animate__fadeInUp ">
+        <div class="semain">
+            <h6>CHECK IN</h6>
+            <i class="fa fa-calendar"></i> <span> Check-In-Date</span>
+        </div>
+        <div class="semain">
+            <h6>CHECK OUT</h6>
+            <i class="fa fa-calendar"></i> <span> Check-In-Out</span>
+        </div>
+        <div class="semain">
+            <h6>ROOMS</h6>
+            <i class="fa fa-chevron-down"></i> <span> suite</span>
+        </div>
+        <div class="semain">
+            <h6>GUESTS</h6>
+            <i class="fa fa-chevron-down"></i> <span> person</span>
+        </div>
+        <div class="semain">
+            <h5>CHECK <br>
+                AVAILABILITY</h5>
+        </div>
+    </div>
+</section>
+
+<!-- third section start -->
+
+<section class="container " id="third">
+      <div class="thmain wow animate__animated animate__fadeInUp">
+          <div class="th1">
+            <div class="tcon">
+              <img src="images/p1.png" alt="">
+              <h4>Cozy Room</h4>
+              <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+            </div>
+            <div class="timg">
+              <img src="images/a1.webp" alt="">
+            </div>
+          </div>
+          <div class="th1">
+            <div class="timg">
+              <img src="images/a2.webp" alt="">
+            </div>
+            <div class="tcon">
+              <img src="images/p2.png" alt="">
+              <h4>Special Offers</h4>
+              <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+            </div>
+          </div>         
+        </div>
+        <div class="thmain wow animate__animated animate__fadeInUp"> 
+          <div class="thcon">
+              <span>ABOUT US</span>
+              <h1>Unwind A Hotel Booking Agency</h1>
+              <p id="p">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+              <button>BOOK YOUR ROOM NOW</button>
+            </div>
+        </div>
+      </div>
+</section>
+
+<!-- four section start -->
+
+<section class="four">
+  <h6>UNWIND SERVICES</h6>
+  <h1>Explore Our Hotel <br> Services</h1>
+
+  <div class="fomain">
+      <div class="fo1 ">
+        <div class="fo1con wow animate__animated animate__fadeInUp">
+          <img src="images/s1.png" alt="">
+          <h5>Free Wifi</h5>
+        </div>
+        <div class="fo1con wow animate__animated animate__fadeInUp">
+          <img src="images/s2.png" alt="">
+          <h5>Easy Booking</h5>
+        </div>
+        <div class="fo1con wow animate__animated animate__fadeInUp">
+          <img src="images/s3.png" alt="">
+          <h5>Restaurant</h5>
+        </div>
+        <div class="fo1con wow animate__animated animate__fadeInUp">
+          <img src="images/s4.png" alt="">
+          <h5>Swimming Pool</h5>
+        </div>
+        <div class="fo1con wow animate__animated animate__fadeInUp">
+          <img src="images/s5.png" alt="">
+          <h5>Beauty & Health</h5>
+        </div>
+        <div class="fo1con wow animate__animated animate__fadeInUp">
+          <img src="images/s6.png" alt="">
+          <h5>Help & Support</h5>
+        </div>
+      </div>
+  </div>
+</section>
+
+<!-- five section start -->
+
+<section class="five">
+  <div class="fivcon wow animate__animated animate__zoomIn">
+    <span>FIND BEST HOTEL FOR LEAVING</span>
+    <h1>Find the Best Hotel in Your Next Vacation</h1>
+  </div>
+  <div class="fivbtn">
+    <button type="button"> BOOK NOW</button>
+  </div>
+</section>
+
+<!-- six section start -->
+
+<section class="six">
+  <span class="span">OUR ROOMS</span>
+  <h1>Featured Rooms</h1>
+  <div class="simain">
+    <div class="sicon">
+      <div class="si1  wow animate__animated animate__flipOutY"> 
+        <h2>Suite Room</h2>
+        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+        <span id="sp">$450 / NIGHT</span> <a> BOOK NOW</a>
+          <img src="images/r1.webp" alt="">
+      </div>
+      <div class="si1  wow animate__animated animate__flipOutY"> 
+          <img src="images/r2.webp" alt="">
+        <h2>Family Room</h2>
+        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+        <span id="sp">$450 / NIGHT</span> <a> BOOK NOW</a>
+      </div>
+      <div class="si1  wow animate__animated animate__flipOutY"> 
+        <h2>Deluxe Room</h2>
+        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+        <span id="sp">$450 / NIGHT</span> <a> BOOK NOW</a>
+          <img src="images/r3.webp" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- seven section start -->
+
+<section class="seven">
+  <div class="sevmain wow animate__animated animate__zoomIn">
+    <span>WATCH OUR LUXURIOUS HOTEL</span>
+    <h1>Take A Tour</h1>
+    <i class="	fa fa-play-circle"></i>
+  </div>
+</section>
+
+
+<!-- eight section start -->
+
+<section class="eight">
+  <span>RESTO & BAR</span>
+  <h1>Restaurant & Bar</h1>
+  <div class="eimain">
+    <div class="ei1">
+      <img src="images/rb1.webp" alt="">
+      <div class="cook">
+        <img src="images/s3.png" alt="">
+      </div>
+    </div>
+    <div class="ei2">
+      <div class="ei2main wow animate__animated animate__fadeInUp">
+        <div class="e2img">
+          <img src="images/m1.webp" alt="">
+        </div>
+        <div class="ei2con">
+          <h4>Grilled Beef with potatoes</h4>
+        </div>
+        <div class="eprice">
+          <h6>$20.00</h6>
+        </div>
+      </div>
+      <div class="ei2main wow animate__animated animate__fadeInUp">
+        <div class="e2img">
+          <img src="images/m2.webp" alt="">
+        </div>
+        <div class="ei2con">
+          <h4>Grilled Beef with potatoes</h4>
+        </div>
+        <div class="eprice">
+          <h6>$20.00</h6>
+        </div>
+      </div>
+      <div class="ei2main wow animate__animated animate__fadeInUp">
+        <div class="e2img">
+          <img src="images/m3.webp" alt="">
+        </div>
+        <div class="ei2con">
+          <h4>Grilled Beef with potatoes</h4>
+        </div>
+        <div class="eprice">
+          <h6>$20.00</h6>
+        </div>
+      </div>
+      <div class="ei2main wow animate__animated animate__fadeInUp">
+        <div class="e2img">
+          <img src="images/m4.webp" alt="">
+        </div>
+        <div class="ei2con">
+          <h4>Grilled Beef with potatoes</h4>
+        </div>
+        <div class="eprice">
+          <h6>$20.00</h6>
+        </div>
+      </div>
+      <div class="ei2main wow animate__animated animate__fadeInUp">
+        <div class="e2img">
+          <img src="images/m5.webp" alt="">
+        </div>
+        <div class="ei2con">
+          <h4>Grilled Beef with potatoes</h4>
+        </div>
+        <div class="eprice">
+          <h6>$20.00</h6>
+        </div>
+      </div>
+      <div class="ei2main wow animate__animated animate__fadeInUp">
+        <div class="e2img">
+          <img src="images/m6.webp" alt="">
+        </div>
+        <div class="ei2con">
+          <h4>Grilled Beef with potatoes</h4>
+        </div>
+        <div class="eprice">
+          <h6>$20.00</h6>
+        </div>
+      </div>
+      <div class="ei2main wow animate__animated animate__fadeInUp">
+        <div class="e2img">
+          <img src="images/m7.webp" alt="">
+        </div>
+        <div class="ei2con">
+          <h4>Grilled Beef with potatoes</h4>
+        </div>
+        <div class="eprice">
+          <h6>$20.00</h6>
+        </div>
+      </div>
+      <div class="ei2main wow animate__animated animate__fadeInUp">
+        <div class="e2img">
+          <img src="images/m8.webp" alt="">
+        </div>
+        <div class="ei2con ">
+          <h4>Grilled Beef with potatoes</h4>
+        </div>
+        <div class="eprice">
+          <h6>$20.00</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- nine section start -->
+
+<section class="nine">
+  <span class="span">TESTIMONIAL</span>
+  <h1>Happy Guests</h1>
+ <div class="nimain">
+  <div id="countermain">
+    <div id="count1" class=" wow animate__animated animate__fadeInUp">
+            <div class="cocon">
+                <span class="counter" id="no">38,900</span><br>
+                <span class="counter1 " id="con"># of Happy Guests</span><br><br>
+            </div>
+            <div class="cocon">
+                <span class="counter" id="no">320</span><br>
+                <span class="counter1" id="con"># of Rooms</span><br><br>
+            </div>
+            <div class="cocon">
+                <span class="counter" id="no">1,000</span><br>
+                <span class="counter1" id="con"># of Staffs</span><br><br>
+            </div>
+            <div class="cocon">
+                <span class="counter" id="no">587</span><br>
+                <span class="counter1" id="con"># of Destination</span><br><br>
+            </div>
+    </div>
+  </div>
+ </div>
+</section>
+
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+<script src="jquery.counterup.min.js"></script>
+
+
+<!-- ten section start -->
+
+<section class="ten">
+ <div class="temain">
+    <img src="images/g1.webp" alt="">
+    <div class="tecon">
+      <i class="fa fa-search"></i>
+    </div>
+ </div>
+ <div class="temain">
+    <img src="images/g2.webp" alt="">
+      <div class="tecon">
+        <i class="fa fa-search"></i>
+      </div>
+  </div>
+<div class="temain">
+  <img src="images/g3.webp" alt="">
+  <div class="tecon">
+    <i class="fa fa-search"></i>
+  </div>
+</div>
+<div class="temain">
+  <img src="images/g4.webp" alt="">
+  <div class="tecon">
+    <i class="fa fa-search"></i>
+  </div>
+</div>
+<div class="temain">
+  <img src="images/g5.webp" alt="">
+  <div class="tecon">
+    <i class="fa fa-search"></i>
+  </div>
+</div>
+</section>
+
+
+<!-- footer section start -->
+<footer class="footer">
+  <div class="fotmain">
+    <div class="fotcon">
+        <h2 class="lg text-white"> Unwind </h2>
+        <h6 class="text-white"> HOTEL BOOKING</h6>
+        <p class="p">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+        <i class="fa fa-twitter  ic"></i> <i class="fa fa-facebook ic"></i> <i class="fa fa-instagram ic"></i>
+    </div>
+    <div class="fotcon">
+      <h3>Services</h3>
+      <p> <i class="	fa fa-chevron-right"></i> Free Wifi</p>
+      <p> <i class="	fa fa-chevron-right"></i> Easy Booking</p>
+      <p> <i class="	fa fa-chevron-right"></i> Restaurant</p>
+      <p> <i class="	fa fa-chevron-right"></i> Swimming Pool</p>
+  </div>
+  <div class="fotcon">
+    <h3></h3>
+    <p class="fp"> <i class="	fa fa-chevron-right"></i> Beauty & Health</p>
+    <p> <i class="	fa fa-chevron-right"></i> 60" Flatscreen TV</p>
+    <p> <i class="	fa fa-chevron-right"></i> Cold Aircondition</p>
+    <p> <i class="	fa fa-chevron-right"></i> Help & Support</p>
+  </div>
+  <div class="fotcon">
+    <h3>Quick Links</h3>
+    <p> <i class="	fa fa-chevron-right"></i> Home</p>
+    <p> <i class="	fa fa-chevron-right"></i> About</p>
+    <p> <i class="	fa fa-chevron-right"></i> Rooms</p>
+    <p> <i class="	fa fa-chevron-right"></i> Resto & Bar</p>
+  </div>
+  <div class="fotcon">
+    <h3>Have a Questions?</h3>
+    <div class="con">
+      <i class=" fa fa-location-arrow  ic1" ></i> <span>	203 Fake St. Mountain View, San Francisco, California, USA</span> <br><br>
+      <i class=" fa fa-map ic1"></i> <span> 	+2 392 3929 210</span> <br><br>
+      <i class=" fa fa-phone ic1"></i> <span>	info@yourdomain.com</span> <br><br>
+    </div>
+  </div>
+  </div>
+</footer>
+<footer class="ft1">
+  <h6>Copyright ©2023 All rights reserved | Created By : Vrunda Thummar</h6>
+</footer>
+</body>
+
+<!-- wow j-query -->
+
+<script src="js/wow.min.js"></script>
+<script>
+new WOW().init();
+</script>
+
+
+</html>
