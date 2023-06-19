@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio1</title>
+    <link rel="stylesheet" href="style.css">
+
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+    <!-- website link  https://preview.colorlib.com/#clyde  -->
+
+    <!-- remix icon --><link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- font-awesome --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+     <!-- counter  up script -->
+     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+     <script>
+       jQuery(document).ready(function( $ ) {
+           $('.counter').counterUp({
+               delay: 20,
+               time: 5000
+           });
+       });
+     </script>
+
+
+
+</head>
+<body>
+    <div class="container-fluid " id="header">
+        <nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+        <h2>CLYDE.</h2>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav m-auto mb-2 mb-lg-0 ">
+        <li class="nav-item">
+          <a class="nav-link active  p-3 " aria-current="page" href="#home" id="hm">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link   p-3  active" href="#about"> ABOUT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link   p-3 active" href="#skill">SKILLS</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link  p-3  active" href="#client"> SERVICES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  p-3  active" href="#project"> PROJECTS</a>
+        </li>
+        <li class="nav-item">
+                <a class="nav-link  p-3  active" href="#blog">BLOG</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  p-3  active" href="#contact">CONTACT</a>
+        </li>
+    </div>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-lg btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</button>
+  </div>
+</nav>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-3 ms-auto" id="exampleModalLabel">Login Form </h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       <input type="text" placeholder="Enter your Email" class="Form form-control"><br>
+       <input type="password" placeholder="Enter your Password" class="Form form-control">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-light">Login</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div> 
+
+<!-- slider section start -->
+
+<div id="carouselExampleFade home" class="carousel slide carousel-fade">
+    <div class="carousel-inner">
+      <div class="carousel-item active position-relative">
+        <img src="image/bg1.jpg" class="d-block w-100 h-90" alt="...">
+        <div class="slidercon position-absolute">
+          <span class="sp">Hello! This is Clyde</span>
+          <h1>Creative <span class="sc">Full Stack</span> Developer</h1>
+          <button type="button" class="btn btn-lg bg-secondary text-white mt-4 border border-0 border-dark"> Hire me</button> &nbsp; <button type="button" class=" sbtn btn btn-lg  mt-4 border border-1 border-dark bg-transparent"> Download CV</button>
+        </div>
+      </div>
+      <div class="carousel-item position-relative">
+        <img src="image/bg2.jpg" class="d-block w-100 h-90" alt="...">
+        <div class="slidercon position-absolute">
+          <span class="sp">We Design & Build Brands</span>
+          <h1>Hi, I am <span class="sc"> Clyde </span> This is my favorite work.</h1>
+          <button type="button" class="btn btn-lg bg-secondary text-white mt-4 border border-0 border-dark"> Hire me</button> &nbsp; <button type="button" class=" sbtn btn btn-lg  mt-4 border border-1 border-dark bg-transparent"> Download CV</button>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <!-- counter section start -->
+
+  <div id="countermain">
+    <div id="count1" class=" wow animate__animated animate__fadeInUp">
+            <div class="cocon d-flex justify-content-between ">
+              <div class="coimg">
+                <i class="ri-briefcase-4-line"></i>
+              </div>
+              <div class="co1">
+                <span class="counter" id="no">750</span><br>
+                <span class="counter1 " id="con">PROJECT COMPLETE</span><br><br>
+              </div>
+            </div>
+            <div class="cocon d-flex justify-content-between ">
+              <div class="coimg">
+                <i class="ri-user-3-line"></i>
+              </div>
+              <div class="co1">
+                <span class="counter" id="no">576</span><br>
+                <span class="counter1 " id="con">HAPPY CLIENTS</span><br><br>
+              </div>
+            </div>
+            <div class="cocon d-flex justify-content-between ">
+              <div class="coimg">
+                <i class="ri-cup-line"></i>
+              </div>
+              <div class="co1">
+                <span class="counter" id="no">478</span><br>
+                <span class="counter1 " id="con">CUPS OF COFFEE</span><br><br>
+              </div>
+            </div>
+            <div class="cocon d-flex justify-content-between ">
+              <div class="coimg">
+                <i class="ri-calendar-check-line"></i>
+              </div>
+              <div class="co1">
+                <span class="counter" id="no">780</span><br>
+                <span class="counter1 " id="con">YEARS EXPERIENCED</span><br><br>
+              </div>
+            </div>
+    </div>
+  </div>
+
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+<script src="jquery.counterup.min.js"></script>
+
+<!-- about section start -->
+
+<section class="about" id="about">
+  <div class="amain">
+    <div class="abcon">
+      <img src="image/about.jpg" alt="">
+    </div>
+    <div class="abcon">
+      <span class="span">MY INTRO</span>
+      <h1>About Me</h1>
+      <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+      <b>name :</b> &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; <span>Clyde Nowitzki</span> <br> <br>
+      <b>Date of birth :</b> &nbsp;  &nbsp; <span> January 01, 1990</span> <br> <br>
+      <b>Address :</b>  &nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; <span>San Francisco CA 97987 USA</span> <br> <br>
+      <b>Zip code :</b> &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; <span>1000</span> <br> <br>
+      <b>Email :</b> &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  <span>cydenowitzki@gmail.com</span> <br> <br>
+      <b>Phone :</b> &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  <span>+1-2234-5678-9-0</span> <br> <br>
+      <div class="aicon">
+        <div class="ai1">
+          <i class="ri-headphone-line"></i> <b>Music</b> 
+        </div>
+        <div class="ai1">
+          <i class="ri-suitcase-3-line"></i> <b>Travel</b> 
+        </div>
+        <div class="ai1">
+          <i class="ri-movie-line"></i><b>Movie</b> 
+        </div>
+        <div class="ai1">
+          <i class="ri-football-line"></i><b>Sports</b> 
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- skill section start -->
+<section class="skill container" id="skill">
+  <div class="scon text-center mt-5">
+    <span class="text-secondary" style="font-weight: bold;">SKILLS</span>
+    <h1 class="mt-3 fs-1" style="font-weight: bold;">My Skills</h1>
+    <p class="mt-3 fs-5 text-secondary">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+  </div>
+  <div class="skmain">
+    <div class="sk1">
+      <h4 class="mt-4 mb-5 text-dark">CSS</h4>
+      <div class="progress-circle over50 p95">
+        <span>95%</span>
+        <div class="left-half-clipper">
+          <div class="first50-bar"></div>
+          <div class="value-bar"></div>
+        </div>
+      </div>
+      <div class="sk1con mt-5 mb-4">
+        <div class="sk1main">
+          <h3>28%</h3>
+          <a href="">Last week</a>
+        </div>
+        <div class="sk1main">
+          <h3>60%</h3>
+          <a href="">Last Month</a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="sk1">
+      <h4 class="mt-4 mb-5 text-dark">HTML</h4>
+      <div class="progress-circle over50 p98">
+        <span>98%</span>
+        <div class="left-half-clipper">
+          <div class="first50-bar"></div>
+          <div class="value-bar"></div>
+        </div>
+      </div>
+      <div class="sk1con mt-5 mb-4">
+        <div class="sk1main">
+          <h3>28%</h3>
+          <a href="">Last week</a>
+        </div>
+        <div class="sk1main">
+          <h3>60%</h3>
+          <a href="">Last Month</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="sk1">
+      <h4 class="mt-4 mb-5 text-dark">J-QUERY</h4>
+      <div class="progress-circle over50 p97">
+        <span>97%</span>
+        <div class="left-half-clipper">
+          <div class="first50-bar"></div>
+          <div class="value-bar"></div>
+        </div>
+      </div>
+      <div class="sk1con mt-5 mb-4">
+        <div class="sk1main">
+          <h3>28%</h3>
+          <a href="">Last week</a>
+        </div>
+        <div class="sk1main">
+          <h3>60%</h3>
+          <a href="">Last Month</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="sk1">
+      <h4 class="mt-4 mb-5 text-dark">C++</h4>
+      <div class="progress-circle over50 p79">
+        <span>79%</span>
+        <div class="left-half-clipper">
+          <div class="first50-bar"></div>
+          <div class="value-bar"></div>
+        </div>
+      </div>
+      <div class="sk1con mt-5 mb-4">
+        <div class="sk1main">
+          <h3>28%</h3>
+          <a href="">Last week</a>
+        </div>
+        <div class="sk1main">
+          <h3>60%</h3>
+          <a href="">Last Month</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="sk1">
+      <h4 class="mt-4 mb-5">BOOTSTRAP</h4>
+      <div class="progress-circle over50 p90">
+        <span>90%</span>
+        <div class="left-half-clipper">
+          <div class="first50-bar"></div>
+          <div class="value-bar"></div>
+        </div>
+      </div>
+      <div class="sk1con mt-5 mb-4">
+        <div class="sk1main">
+          <h3>28%</h3>
+          <a href="">Last week</a>
+        </div>
+        <div class="sk1main">
+          <h3>60%</h3>
+          <a href="">Last Month</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="sk1">
+      <h4 class="mt-4 mb-5">WORDPRESS</h4>
+      <div class="progress-circle over50 p80">
+        <span>80%</span>
+        <div class="left-half-clipper">
+          <div class="first50-bar"></div>
+          <div class="value-bar"></div>
+        </div>
+      </div>
+      <div class="sk1con mt-5 mb-4">
+        <div class="sk1main">
+          <h3>28%</h3>
+          <a href="">Last week</a>
+        </div>
+        <div class="sk1main">
+          <h3>60%</h3>
+          <a href="">Last Month</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- clients section start -->
+
+<section class="client container" id="client">
+  <div class="ccon text-center">
+    <span style="font-weight: bold; color: gray;"> I AM GRAT AT</span>
+    <h1  style="font-weight: bold; margin-top: 10px;">We do awesome services for our clients</h1>
+    <p  style=" color: gray; margin-top: 10px; word-spacing: 5px; font-size: 20px;">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+  </div>
+  <div class="cmain">
+    <div class="c1">
+      <div class="c2con">
+        <i class="fa fa-cubes"></i>
+      </div>
+      <div class="c1con">
+        <h4>Web Design</h4>
+        <p id="p"> A small river named Duden flows by their place and supplies.</p>
+      </div>
+    </div>
+
+    <div class="c1">
+      <div class="c2con">
+        <i class="fa fa-mobile-phone"></i>
+      </div>
+      <div class="c1con">
+        <h4>Web Application</h4>
+        <p id="p"> A small river named Duden flows by their place and supplies.</p>
+      </div>
+    </div>
+
+    <div class="c1">
+      <div class="c2con">
+        <i class="	fa fa-credit-card"></i>
+      </div>
+      <div class="c1con">
+        <h4>Web Development</h4>
+        <p id="p"> A small river named Duden flows by their place and supplies.</p>
+      </div>
+    </div>
+
+    <div class="c1">
+      <div class="c2con">
+        <i class="	fa fa-drivers-license-o"></i>
+      </div>
+      <div class="c1con">
+        <h4>Banner Design</h4>
+        <p id="p"> A small river named Duden flows by their place and supplies.</p>
+      </div>
+    </div>
+
+    <div class="c1">
+      <div class="c2con">
+        <i class="	fa fa-desktop"></i>
+      </div>
+      <div class="c1con">
+        <h4>Branding</h4>
+        <p id="p"> A small river named Duden flows by their place and supplies.</p>
+      </div>
+    </div>
+
+    <div class="c1">
+      <div class="c2con">
+        <i class="	fa fa-image"></i>
+      </div>
+      <div class="c1con">
+        <h4>Icon Design</h4>
+        <p id="p"> A small river named Duden flows by their place and supplies.</p>
+      </div>
+    </div>
+
+    <div class="c1">
+      <div class="c2con">
+        <i class="	fa fa-object-ungroup"></i>
+      </div>
+      <div class="c1con">
+        <h4>Graphic Design</h4>
+        <p id="p"> A small river named Duden flows by their place and supplies.</p>
+      </div>
+    </div>
+
+    <div class="c1">
+      <div class="c2con">
+        <i class="fa fa-search"></i>
+      </div>
+      <div class="c1con">
+        <h4>SEO</h4>
+        <p id="p"> A small river named Duden flows by their place and supplies.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- service section start -->
+<section class="service">
+  <div class="container" id="smain">
+    <div class="scon">
+      <h1>Have a project on your mind.</h1>
+      <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly.</p>
+      <button class="btn border border-1 border-dark bg-white text-secondary mt-1" type="button"> CONTACT ME</button>
+    </div>
+    <div class="simg">
+      <img src="image/a1.jpg" alt="">
+    </div>
+  </div>
+</section>
+
+<!-- project section start -->
+
+<section id="project" class="mt-5 ">
+  <div class="pcon text-center">
+    <span style=" color: gray; margin-top: 10px; word-spacing: 5px; font-weight: bold;">ACCOMPLISHMENTS</span>
+    <h1  style="font-weight: bold; margin-top: 10px;">Our Projects</h1>
+    <p style=" color: gray; margin-top: 10px; word-spacing: 5px; font-size: 20px;">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+  </div>
+  <div class="pmain">
+    <div class="pic">
+      <div class="pimg">
+        <img src="image/w1.jpg" alt="">
+      </div>
+      <div class="pin">
+        <h4>Branding & Illustration Design 
+        WEB DESIG</h4>
+      </div>
+    </div>
+
+    <div class="pic">
+      <div class="pimg">
+        <img src="image/w2.jpg" alt="">
+      </div>
+      <div class="pin">
+        <h4>Branding & Illustration Design 
+        WEB DESIG</h4>
+      </div>
+    </div>
+
+    <div class="pic">
+      <div class="pimg">
+        <img src="image/w3.jpg" alt="">
+      </div>
+      <div class="pin">
+        <h4>Branding & Illustration Design 
+        WEB DESIG</h4>
+      </div>
+    </div>
+
+    <div class="pic">
+      <div class="pimg">
+        <img src="image/w4.jpg" alt="">
+      </div>
+      <div class="pin">
+        <h4>Branding & Illustration Design 
+        WEB DESIG</h4>
+      </div>
+    </div>
+
+    <div class="pic">
+      <div class="pimg">
+        <img src="image/w5.jpg" alt="">
+      </div>
+      <div class="pin">
+        <h4>Branding & Illustration Design 
+        WEB DESIG</h4>
+      </div>
+    </div>
+
+    <div class="pic">
+      <div class="pimg">
+        <img src="image/w6.jpg" alt="">
+      </div>
+      <div class="pin">
+        <h4>Branding & Illustration Design 
+        WEB DESIG</h4>
+      </div>
+    </div>
+
+    <div class="pic">
+      <div class="pimg">
+        <img src="image/w7.jpg" alt="">
+      </div>
+      <div class="pin">
+        <h4>Branding & Illustration Design 
+        WEB DESIG</h4>
+      </div>
+    </div>
+
+    <div class="pic">
+      <div class="pimg">
+        <img src="image/w8.jpg" alt="">
+      </div>
+      <div class="pin">
+        <h4>Branding & Illustration Design 
+        WEB DESIG</h4>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- blog section start -->
+
+<section class="blog" id="blog">
+
+  <div class="bcon text-center">
+    <span style=" color: gray; margin-top: 10px; word-spacing: 5px; font-weight: bold;">BLOG</span>
+    <h1  style="font-weight: bold; margin-top: 10px;">Our Blog</h1>
+    <p style=" color: gray; margin-top: 10px; word-spacing: 5px; font-size: 20px;">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+  </div>
+
+  <div class="container" id="bmain">
+    <div class="b1con">
+      <img src="image/b1.jpg" alt="">
+      <h6 class="mt-3 text-secondary">JULY 03, 2020 ADMIN 3</h6>
+      <h4>Why Lead Generation is Key for Business Growth</h4>
+      <p class="p">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+    </div>
+
+    <div class="b1con">
+      <img src="image/b2.jpg" alt="">
+      <h6 class="mt-3 text-secondary">JULY 03, 2020 ADMIN 3</h6>
+      <h4>Why Lead Generation is Key for Business Growth</h4>
+      <p class="p">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+    </div>
+
+    <div class="b1con">
+      <img src="image/b3.jpg" alt="">
+      <h6 class="mt-3 text-secondary">JULY 03, 2020 ADMIN 3</h6>
+      <h4>Why Lead Generation is Key for Business Growth</h4>
+      <p class="p">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+    </div>
+  </div>
+</section>
+
+<!-- contact section start -->
+
+<section id="contact" class="container">
+  <div class="con text-center">
+    <span style=" color: gray; margin-top: 10px; word-spacing: 5px; font-weight: bold;">CONTACT US</span>
+    <h1  style="font-weight: bold; margin-top: 10px; font-size: 50px;">Have a Project?</h1>
+    <p style=" color: gray; margin-top: 20px; word-spacing: 5px; font-size: 20px;">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+  </div>
+<div class="comain">
+  <div class="con1">
+    <form action="" >
+      <input type="text" placeholder="Your Name" required>
+      <input type="text" placeholder="Your Email" required> <br>
+      <input type="text" id="sub" placeholder="Subject" required> <br>
+      <textarea name="" id="" cols="25" rows="3" placeholder="Message" required></textarea> <br>
+      <button> Send Message</button>
+    </form>
+  </div>
+  <div class="con2">
+   <div class="con21">
+      <div class="c21">
+        <i class="fa fa-map-marker"></i>
+      </div>
+      <div class="c22">
+        <b>address :</b>
+        <h6> 198 West 21th Street, Suite 721 New York NY 10016</h6>
+      </div>
+   </div>
+
+   <div class="con21">
+    <div class="c21">
+      <i class="fa fa-phone"></i>
+    </div>
+    <div class="c22">
+      <b>Phone:</b>
+      <h6>+ 1235 2355 98</h6>
+    </div>
+ </div>
+
+ <div class="con21">
+  <div class="c21">
+    <i class="fa fa-send"></i>
+  </div>
+  <div class="c22">
+    <b>Email:</b>
+    <h6>info@yoursite.com</h6>
+  </div>
+</div>
+
+<div class="con21">
+  <div class="c21">
+    <i class="	fa fa-globe"></i>
+  </div>
+  <div class="c22">
+    <b>Website</b>
+    <h6>yoursite.com</h6>
+  </div>
+</div>
+  </div>
+</div>
+</section>
+
+
+
+<!-- footer section start -->
+<footer class="footer">
+  <div class="fotmain">
+    <div class="fotcon">
+      <h3>Lets talk about</h3>
+        <p class="p">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+        <button class="btn bg-secondary btn-lg mt-3" type="button"> Learn More</button>
+      </div>
+      <div class="fotcon">
+        <h3>Services</h3>
+        <p class="fp"> <i class="	fa fa-chevron-right"></i> Web Design</p>
+        <p> <i class="	fa fa-chevron-right"></i> Web Development</p>
+        <p> <i class="	fa fa-chevron-right"></i> Business Strategy</p>
+        <p> <i class="	fa fa-chevron-right"></i> Data Analysis</p>
+        <p> <i class="	fa fa-chevron-right"></i> Graphic Design</p>
+      </div>
+    <div class="fotcon">
+      <h3>Links</h3>
+      <p> <i class="	fa fa-chevron-right"></i> Home</p>
+      <p> <i class="	fa fa-chevron-right"></i> About</p>
+      <p> <i class="	fa fa-chevron-right"></i>  Services</p>
+      <p> <i class="	fa fa-chevron-right"></i> Projects</p>
+      <p> <i class="	fa fa-chevron-right"></i> Contact</p>
+  </div>
+  <div class="fotcon">
+    <h3>Have a Questions?</h3>
+    <div class="con">
+      <i class=" fa fa-location-arrow  ic1" ></i> <span>	203 Fake St. Mountain View, San Francisco, California, USA</span> <br><br>
+      <i class=" fa fa-map ic1"></i> <span> 	+2 392 3929 210</span> <br><br>
+      <i class=" fa fa-phone ic1"></i> <span>	info@yourdomain.com</span> <br><br>
+      <i class="fa fa-twitter  ic"></i> <i class="fa fa-facebook ic"></i> <i class="fa fa-instagram ic"></i>
+    </div>
+  </div>
+  </div>
+</footer>
+<footer class="ft1">
+  <h6>Copyright ©2023 All rights reserved | Created By : Vrunda Thummar</h6>
+</footer>
+
+
+
+
+
+</body>
+</html>

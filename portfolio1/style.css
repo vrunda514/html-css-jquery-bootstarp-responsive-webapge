@@ -1,0 +1,948 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#header{
+    background-color:rgb(203, 202, 202);
+    /* position: sticky; */
+    /* top: 0; */
+}
+.nav-item{
+    font-weight:500;
+}
+
+.carousel-item {
+    height: 90vh;
+}
+.slidercon{
+    height: auto;
+    width: 40%;
+    top: 25%;
+    left: 9%;
+    color: black;
+    /* border: 1px solid black; */
+}
+.slidercon .sp{
+    font-size: 18px;
+    font-weight: 600;
+    word-spacing: 5px;
+}
+.slidercon h1{
+    margin-top: 20px;
+    font-size: 60px;
+}
+
+/* counter section start */
+
+#countermain{
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid black; */
+}
+#count1{
+    height: auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* border: 1px solid red; */
+}
+.cocon{
+    height: 100px;
+    flex-basis: 24%;
+    /* border: 1px solid red; */
+}
+.coimg{
+    height: 80px;
+    width: 80px;
+    background-color: gray;
+    border-radius: 50%;
+    text-align: center;
+    /* border: 1px solid black; */
+}
+.coimg i{
+    color: white;
+    margin: auto;
+    font-size: 50px;
+}
+.co1{
+    width:65%;
+}
+.cocon #no{
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.cocon #con{
+    font-weight: bold;
+    font-size: 18px;
+    word-spacing: 5px;
+    font-family: Corbel Light ;
+}
+
+/* about section strat */
+
+.about{
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+    /* border: 1px solid black; */
+}
+.amain{
+    height: auto;
+    width: 90%;
+    /* border: 1px solid black; */
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+}
+.abcon{
+    height: auto;
+    flex-basis: 48%;
+    /* border: 1px solid black; */
+}
+.abcon:nth-of-type(2){
+    padding: 20px;
+}
+.abcon img{
+    height: 700px;
+    width: 100%;
+}
+.abcon .span{
+    font-weight: bold;
+}
+.abcon h1{
+    margin-top: 10px;
+    font-weight: bold;
+}
+.abcon p{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 19px;
+}
+.aicon{
+    height: auto;
+    width: 100%;
+    margin-top: 25px;
+    /* border: 1px solid black; */
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+}
+.ai1{
+    height: auto;
+    flex-basis: 22%;
+    border-right: 1px solid gray;
+    /* border: 1px solid black; */
+}
+.ai1 i{
+    font-size:28px;
+    background-color: gray;
+    padding: 6px;
+    border-radius: 50%;
+}
+.ai1 b{
+    margin-left: 5px;
+}
+.ai1:nth-of-type(4){
+    border-right: 0px solid black;
+}
+
+/* skill section start */
+
+/* process css */
+
+.progress-circle {
+    font-size: 28px;
+    position: relative; /* so that children can be absolutely positioned */
+    padding: 0;
+    width: 5em;
+    height: 5em;
+    margin-left: 100px;
+    /* text-align: center; */
+    background-color: #f2e9e1;
+    border-radius: 50%;
+    line-height: 5em;
+  }
+  
+  .progress-circle:after {
+    border: none;
+    position: absolute;
+    top: 0.35em;
+    left: 0.35em;
+    text-align: center;
+    display: block;
+    border-radius: 50%;
+    width: 4.3em;
+    height: 4.3em;
+    background-color: white;
+    content: " ";
+  }
+  /* Text inside the control */
+  .progress-circle span {
+    position: absolute;
+    line-height: 5em;
+    width: 5em;
+    text-align: center;
+    display: block;
+    color:gray;
+    z-index: 2;
+  }
+  .left-half-clipper {
+    /* a round circle */
+    border-radius: 50%;
+    width: 5em;
+    height: 5em;
+    position: absolute; /* needed for clipping */
+    clip: rect(0, 5em, 5em, 2.5em); /* clips the whole left half*/
+  }
+  /* when p>50, don't clip left half*/
+  .progress-circle.over50 .left-half-clipper {
+    clip: rect(auto, auto, auto, auto);
+  }
+  .value-bar {
+    /*This is an overlayed square, that is made round with the border radius,
+     then it is cut to display only the left half, then rotated clockwise
+     to escape the outer clipping path.*/
+    position: absolute; /*needed for clipping*/
+    clip: rect(0, 2.5em, 5em, 0);
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    border: 0.45em solid gray; /*The border is 0.35 but making it larger removes visual artifacts */
+    /*background-color: #4D642D;*/ /* for debug */
+    box-sizing: border-box;
+  }
+  /* Progress bar filling the whole right half for values above 50% */
+  .progress-circle.over50 .first50-bar {
+     /* Progress bar for the first 50%, filling the whole right half */
+     position: absolute;/* needed for clipping */
+    clip: rect(0, 5em, 5em, 2.5em);
+    background-color: gray;
+    border-radius: 50%;
+    width: 5em;
+    height: 5em;
+  }
+.progress-circle:not(.over50) .first50-bar { 
+    display: none;
+  }
+  
+/* Progress bar rotation position */
+ 
+  .progress-circle.p80 .value-bar {
+    transform: rotate(300deg);
+  }
+  .progress-circle.p79 .value-bar {
+    transform: rotate(298deg);
+  }
+  .progress-circle.p90 .value-bar {
+    transform: rotate(320deg);
+  }
+  .progress-circle.p95 .value-bar {
+    transform: rotate(342deg);
+  }
+  .progress-circle.p98 .value-bar {
+    transform: rotate(353deg);
+  }
+  .progress-circle.p97 .value-bar {
+    transform: rotate(350deg);
+  }
+
+  .skmain{
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+    justify-content: space-evenly;
+    /* border: 1px solid black; */
+  }
+  .sk1{
+    height: auto;
+    flex-wrap: wrap;
+    flex-basis:29%;
+    text-align: center;
+    background-color: whitesmoke;
+    margin-top: 55px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 1px gray;
+    /* border: 1px solid black; */
+  }
+  .sk1con{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .sk1main{
+    flex-basis:50%;
+    /* border: 1px solid black; */
+  }
+  .sk1main h3{
+    color: gray;
+  }
+  .sk1main a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+  
+/* client section start */
+
+.ccon{
+    text-align: center;
+    margin-top: 150px;
+    /* border: 1px solid black; */
+}
+.cmain{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 150px;
+    justify-content: space-evenly;
+    /* border: 1px solid black; */
+}
+.c1{
+    height: 250px;
+    flex-basis: 22%;
+    position: relative;
+    border-radius: 10px;
+    padding: 20px;
+    transition: 1s;
+    margin-top: 100px;
+    border: 1px solid gainsboro;
+}
+.c1:hover{
+    background-color: gray;
+    color: white;
+}
+.c1:hover .c2con{
+    background-color: white;
+    transform: translateX(30px);
+}
+.c1:hover .fa{
+    color:gray;
+}
+
+.c1con{
+    height: auto;
+    width: 100%;
+    margin-top: 40px;
+}
+.c1con h4{
+    font-weight: bold;
+    margin-top: 5px;
+}
+.c1con #p{
+    margin-top: 20px;
+    font-size: 19px;
+    font-weight: 400;
+}
+.c2con{
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    background-color: gray;
+    position: absolute;
+    top: -20%;
+    text-align: center;
+    transition: 1s;
+}
+.c2con .fa{
+    font-size: 45px;
+    margin-top: 19px;
+    color: white;
+}
+
+/* services section start */
+
+.service{
+    height: auto;
+    width: 100%;
+    background-color: gray;
+    color: white;
+    position: relative;
+    padding: 20px;
+    margin-bottom: 100px;
+    /* border: 1px solid black; */
+}
+#smain{
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#smain .scon{
+    height: auto;
+    flex-basis: 60%;
+    margin-left: 40px;
+    /* border: 1px solid black; */
+}
+.scon h1{
+    font-size: 50px;
+}
+.scon p{
+    margin-top: 25px;
+    font-size: 20px;
+}
+#smain .simg{
+    height:350px;
+    width: 30%;
+    position: absolute;
+    right: 5%;
+    bottom: 0;
+    /* border: 1px solid black; */
+}
+.simg img{
+    height: 100%;
+    width: 100%;
+}
+
+/* project section start */
+
+.pmain{
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    position: relative;
+    margin-bottom: 100px;
+}
+.pic{
+    height: auto;
+    flex-basis: 22%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1s;
+    margin-top: 30px;
+    background-color: black;
+    /* border: 1px solid black; */
+}
+.pimg{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.pimg img{
+    height: 300px;
+    width: 100%;
+    border-radius: 20px;
+    transition: 1s;
+}
+.pimg img:hover{
+    opacity: 0.8;
+    transform: scale(1.3);
+}
+.pin{
+    width:16%;
+    color: white;
+    height: auto;
+    display: none;
+    position: absolute;
+}
+.pic:hover .pin{
+    display: block;
+}
+
+/* blog section start */
+
+#bmain{
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 70px;
+    margin-bottom: 110px;
+    /* border: 1px solid black; */
+}
+.b1con{
+    height: 500px;
+    flex-basis: 28%;
+    /* border: 1px solid black; */
+}
+.b1con img{
+    height: 280px;
+    width: 100%;
+    cursor: pointer;
+}
+.b1con h4{
+    margin-top: 20px;
+    line-height: 35px;
+}
+.b1con .p{
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+/* contect section start */
+
+.comain{
+    height: auto;
+    margin-top: 90px;
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* border: 1px solid black; */
+}
+.con1{
+    height: auto;
+    flex-basis: 55%;
+    padding: 20px;
+    background-color: lightgray;
+    color: white;
+    border-radius: 20px;
+    box-shadow:5px 5px 5px 5px gray;
+    /* border: 1px solid black; */
+}
+.con1 input{
+    height: 55px;
+    width: 45%;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+.con1 #sub{
+    width: 94%;
+}
+.con1 textarea{
+    height: 100px;
+    width: 94%;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+.con1 button{
+    margin-left: 20px;
+    margin-top: 20px;
+    padding:15px;
+    border-radius: 10px;
+    border: 1px solid black;
+    width: 200px;
+    /* background-color: lightgray; */
+}
+.con2{
+    height: auto;
+    flex-basis: 40%;
+    /* border: 1px solid black; */
+}
+.con21{
+    height:100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* border: 1px solid black; */
+}
+.c21{
+    height: 60px;
+    flex-basis: 60px;
+    border-radius: 50%;
+    background-color: gray;
+    color: white;
+    text-align: center;
+    /* border: 1px solid black; */
+}
+.c21 .fa{
+    margin-top: 15px;
+    font-size: 30px;
+}
+.c22{
+    height: auto;
+    flex-basis: 70%;
+    /* border: 1px solid black; */
+}
+.c22 b{
+    font-size: 20px;
+}
+.c22 h6{
+    font-size: 15px;
+}
+
+
+/* footer section start */
+
+.footer{
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(18, 18, 18);
+}
+.fotmain{
+    height: auto;
+    width: 90%;
+    display: flex;
+    /* align-items: center; */
+    margin-top: 10vh;
+    justify-content: space-evenly;
+    /* border: 1px solid white; */
+}
+.fotcon{
+    height: auto;
+    flex-basis:20%;
+    color: white;
+    padding: 10px;
+    /* border: 1px solid white; */
+}
+.fotcon .p{
+    margin-top: 35px;
+}
+.fotcon .ic{
+    text-align: center;
+    border-radius: 50%;
+    font-size: 25px;
+    margin:10px;
+    color:gray;
+}
+.fotcon p{
+    margin-top: 30px;
+    transition: 1s;
+}
+.fotcon p:hover{
+    color:gray;
+    cursor: pointer;
+}
+.fotcon .con{
+    margin-top: 20px;
+}
+.fotcon span{
+    margin-left: 10px;
+}
+.fotcon .ic1{
+    color:gray;
+    font-size: 20px;
+}
+.ft1{
+    background-color: rgb(18, 18, 18);
+    color: white;
+    text-align: center;
+}
+.ft1 h6{
+    padding: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------------------------- */
+
+/* responsive start */
+
+
+@media(min-width:992px) and (max-width:1200px){
+    .slidercon{
+        width: 70%;
+        color: white;
+    }
+    #count1{
+        flex-wrap: wrap;
+    }
+    .cocon{
+        flex-basis: 45%;
+        margin-top: 20px;
+    }
+    .progress-circle{
+        margin-left: 65px;
+    }
+    .c1{
+        flex-basis: 30%;
+        margin-top: 100px;
+    }
+    .pic{
+        flex-basis:30%;
+        margin-top: 20px;
+    }
+}
+
+
+@media(min-width:768px) and (max-width:992px){
+    .slidercon{
+        width: 70%;
+        color: white;
+    }
+    #countermain{
+        height: auto;
+    }
+    #count1{
+        flex-wrap: wrap;
+    }
+    .cocon{
+        flex-basis: 45%;
+        margin-top: 20px;
+    }
+    .co1{
+        margin-left: 5px;
+    }
+    .cocon #no{
+        font-size: 30px;
+    }
+    .cocon #con{
+        font-size: 16px;
+    }
+    .amain{
+        margin-top: 50px;
+        flex-direction: column;
+    }
+    .abcon img{
+        height: 500px;
+    }
+    .sk1{
+        flex-basis: 40%;
+    }
+    .progress-circle{
+        margin-left: 60px;
+    }
+    .c1{
+        flex-basis: 40%;
+        margin-top: 100px;
+    }
+    .scon h1{
+        font-size: 30px;
+    }
+    .scon p{
+        font-size: 15px;
+    }
+    #smain .scon{
+        flex-basis: 50%;
+    }
+    #smain .simg{
+        height: 300px;
+        width: 40%;
+        right: 0%;
+    }
+    .pic{
+        flex-basis:40%;
+        margin-top: 20px;
+    }
+    #bmain{
+        flex-wrap: wrap;
+    }
+    .b1con{
+        flex-basis: 40%;
+        margin-top: 50px;
+    }
+    .con1 input{
+        width: 94%;
+    }
+    .con2{
+        margin-top: 50px;
+    }
+    .fotmain{
+        flex-wrap: wrap;
+    }
+    .fotcon{
+        flex-basis: 45%;
+        margin-top: 20px;
+    }
+
+}
+
+@media(min-width:576px) and (max-width:768px){
+    .slidercon{
+        width: 70%;
+        top: 20%;
+        color: white;
+    }
+    .slidercon h1{
+        font-size: 40px;
+    }
+    .slidercon .sbtn{
+        color: white;
+    }
+    #countermain{
+        height: auto;
+    }
+    #count1{
+        flex-wrap: wrap;
+    }
+    .cocon{
+        flex-basis: 45%;
+        margin-top: 20px;
+    }
+    .co1{
+        margin-left: 5px;
+    }
+    .cocon #no{
+        font-size: 30px;
+    }
+    .cocon #con{
+        font-size: 16px;
+    }
+    .amain{
+        margin-top: 50px;
+        flex-direction: column;
+    }
+    .abcon img{
+        height: 500px;
+    }
+    /* .skmain{
+        flex-direction: column;
+    } */
+    .sk1{
+        flex-basis: 80%;
+    }
+    .progress-circle{
+        margin-left: 150px;
+    }
+    .cmain{
+        flex-direction: column;
+    }
+    .c1{
+        margin-top: 100px;
+    }
+    .scon h1{
+        font-size: 30px;
+    }
+    .scon p{
+        font-size: 15px;
+    }
+    #smain .scon{
+        flex-basis: 50%;
+    }
+    #smain .simg{
+        height: 300px;
+        width: 40%;
+        right: 0%;
+    }
+    .pic{
+        flex-basis:80%;
+        margin-top: 20px;
+    }
+    #bmain{
+        flex-direction: column;
+    }
+    .b1con{
+        margin-top: 50px;
+    }
+    .comain{
+        flex-direction: column;
+    }
+    .con2{
+        margin-top: 50px;
+    }
+    .fotmain{
+        flex-direction: column;
+    }
+    .fotcon{
+        margin-top: 20px;
+    }
+}
+
+@media(min-width:0px) and (max-width:576px){
+    .slidercon{
+        width: 90%;
+        top: 15%;
+        color: white;
+    }
+    .slidercon h1{
+        font-size: 40px;
+    }
+    .slidercon .sbtn{
+        color: white;
+    }
+    #countermain{
+        height: auto;
+    }
+    #count1{
+        flex-wrap: wrap;
+    }
+    .cocon{
+        flex-basis: 45%;
+        margin-top: 20px;
+    }
+    .co1{
+        margin-left: 5px;
+    }
+    .cocon #no{
+        font-size: 30px;
+    }
+    .cocon #con{
+        font-size: 16px;
+    }
+    .amain{
+        margin-top: 50px;
+        flex-direction: column;
+    }
+    .abcon img{
+        height: 500px;
+    }
+    /* .skmain{
+        flex-direction: column;
+    } */
+    .sk1{
+        flex-basis: 80%;
+    }
+    .progress-circle{
+        margin-left: 150px;
+    }
+    .cmain{
+        flex-direction: column;
+    }
+    .c1{
+        margin-top: 100px;
+    }
+    .scon h1{
+        font-size: 30px;
+    }
+    .scon p{
+        font-size: 15px;
+    }
+    #smain .scon{
+        flex-basis: 50%;
+    }
+    #smain .simg{
+        height: 300px;
+        width: 40%;
+        right: 0%;
+    }
+    .pic{
+        flex-basis:80%;
+        margin-top: 20px;
+    }
+    #bmain{
+        flex-direction: column;
+    }
+    .b1con{
+        margin-top: 50px;
+    }
+    .comain{
+        flex-direction: column;
+    }
+    .con2{
+        margin-top: 50px;
+    }
+    .fotmain{
+        flex-direction: column;
+    }
+    .fotcon{
+        margin-top: 20px;
+    }
+}
